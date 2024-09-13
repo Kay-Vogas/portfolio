@@ -85,7 +85,7 @@ a{
 .introduction h1::before{
     content:"";
     display: block;
-    background-image: url("/img-site/detalhe.svg");
+    background-image: url("img-site/detalhe.svg");
     width: 130px;
     height: 128px;
     position: absolute;
@@ -332,7 +332,7 @@ a{
 
 .icon::before {
     content:"";
-    background-image: url("/img-site/cursos.svg");
+    background-image: url("img-site/cursos.svg");
     width: 24px;
     height: 24px;
     display: block;
@@ -342,7 +342,7 @@ a{
 
 .icon2::before{
     content:"";
-    background-image: url("/img-site/idiomas.svg");
+    background-image: url("img-site/idiomas.svg");
     width: 24px;
     height: 24px;
     display: block;
@@ -386,7 +386,7 @@ a{
 
 .footer-grid p::before{
     content:"";
-    background-image: url("/img-site/detalhe.svg");
+    background-image: url("img-site/detalhe.svg");
     width: 128px;
     height: 128px;
     display: block;
