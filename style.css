@@ -332,9 +332,9 @@ a{
 
 .icon::before {
     content:"";
-/*     background-image: url("img-site/cursos.svg"); */
-    width: 140px;
-    height: 140px;
+    background-image: url("img-site/cursos.svg");
+    width: 24px;
+    height: 24px;
     display: block;
     position: absolute;
     left: -80px;
@@ -343,9 +343,9 @@ a{
 
 .icon2::before{
     content:"";
-/*     background-image: url("img-site/idiomas.svg" ); */
-    width: 140px;
-    height: 140px;
+    background-image: url("img-site/idiomas.svg" );
+    width: 24px;
+    height: 24px;
     display: block;
     position: absolute;
     left: -80px;
