@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    font-family:Roboto, Arial;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px ;
+    align-items: center;
+}
+
+.hotbar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 40px;
+}
+
+.hotbar a {
+    font-size: 1.4rem;
+    font-weight:400;
+}
+
+
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .container img{
+        width: 35%;
+    }
+    .hotbar a{
+        background-color: #edededd2;
+        border-radius: 5px;
+        padding: 15px 
+    }
+}
+
+
+
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    justify-items: center;
+    position: relative;
+}
+
+.introduction h1,p{
+    grid-column: 2/2;
+}
+
+.introduction h1{
+    font-size: 5.5rem;
+    justify-content: left;
+    padding-top: 90px;
+    position: relative;
+}
+
+.steven-icon {
+    border-radius:50%;
+    width: 60%; 
+    height: auto; 
+    display: block; 
+}
+
+.introduction p{
+    font-size: 25px;
+    color: black;
+    margin-left: 110px;
+}
+
+.introduction h1::before{
+    content:"";
+    display: block;
+    background-image: url("/img-site/detalhe.svg");
+    width: 130px;
+    height: 128px;
+    position: absolute;
+    right: 550px;
+    top: 80px;
+    z-index: -1;
+}
+
+@media(max-width:1100px) {
+    .introduction h1{
+        font-size: 4.2rem;
+    }
+
+    .introduction h1::before {
+        right: 400px;
+        top: 60px;
+        width: 128px;
+    }
+
+}
+
+@media(max-width:900px) {
+    .introduction{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .introduction h1{
+        font-size: 3rem;
+    }
+
+    .introduction h1::before {
+        right: 270px;
+        top: 60px;
+        width: 128px;
+    }
+
+    .introduction p {
+        margin-left: 0px;
+    }
+    .introduction p img{
+        width: 10%;
+        display: block ;
+    }
+    .steven-icon{
+        width: 80%;
+    }
+}
+
+@media(max-width:600px) {
+    
+    .introduction{
+        grid-template-columns: 1fr;
+    }
+
+    .introduction h1{
+        font-size: 2.5rem;
+    }
+    
+    .introduction p {
+        margin-left: 70px;
+    }
+    .steven-icon{
+        display: none;
+    }
+    .introduction h1::before {
+        right: 200px;
+        top: 60px;
+        width: 128px;
+    }
+
+}
+
+.experience{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr;
+    padding-top: 90px;
+}
+
+.experience h2{
+    font-size: 10rem;
+    word-break: break-all;
+    color: #c6c6c6;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.description-experience{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 60px 90px;
+    color: rgb(46, 46, 46);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    padding: 25px 25px;
+    background-color: #dddcdc;
+    border-radius: 10px;
+    margin: 30px 200px
+}
+
+.content p{
+    color: black;
+    font-weight: 400;
+}
+
+.content div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.detail{
+    position: relative;
+}
+
+.detail::before{
+    content: "";
+    background-color: #ff0084 ;
+    display: block;
+    position: absolute;
+    width: 25px ;
+    height: 5px ;
+    left: -35px;
+}
+
+
+.detail-item{
+    padding: 10px;
+    background-color: #f7f7f7;
+    gap: 30px ;
+}
+
+.formation{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding-top: 50px;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.formation h2{
+    font-size: 10rem;
+    word-break: break-all;
+    color: #362d2d;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.description-formation{
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    padding: 60px 100px;
+    text-align: center;
+    
+}
+
+.information h3,p{
+    color: #e2e1e1;
+    font-weight: 300;
+}
+
+.style{
+    font-weight: 500;
+    color: #ff0084;
+}
+
+.formation-academic{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.academic-order{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 40px;
+    gap: 40px;
+    padding: 20px 50px 30px 15px;
+    background-color: #1b1c1f;
+    border-radius: 5px;
+    position: relative;
+    
+
+}
+.academic-order h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.academic-order p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #c6c6c6;
+}
+
+.academic-order::before{
+    content: "";
+    background-color: #ff0084 ;
+    display: block;
+    position: absolute;
+    width: 20px ;
+    height: 5px ;
+    left: -10px;
+    top: 30px;
+}
+
+.academic-clock{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 80px;
+    margin-top: 100px;
+}
+
+.academic-clock h3{
+    color: #5c6068;
+    font-weight: bold;
+    position: relative;
+}
+
+.information-cursos{
+    grid-column: 1/2;
+    padding-left: 30px;
+    margin-top: 40px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.information-cursos-p{
+    font-size: 1.3rem ;
+    padding-left: 30px;
+    margin-top: 40px;
+    text-align: end;
+    padding-right: 90px;
+    color: #5c6068;
+    font-weight: bold;
+}
+
+.icon::before {
+    content:"";
+    background-image: url("/img-site/cursos.svg");
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: -35px;
+}
+
+.icon2::before{
+    content:"";
+    background-image: url("/img-site/idiomas.svg");
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: -35px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #2e2e2e;
+    padding: 80px 50px;
+    
+}
+
+.footer-grid p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    grid-column: 1/2;
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    color: #d7dff0;
+}
+
+.footer-grid h2{
+    font-size: 2.5rem;
+    grid-column: 2/2;
+    gap: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.footer-grid span{ 
+    font-size: 1.5rem;
+    padding-top: 100px;
+    color: #f7f7f7;
+}
+
+.footer-grid p::before{
+    content:"";
+    background-image: url("/img-site/detalhe.svg");
+    width: 128px;
+    height: 128px;
+    display: block;
+    position: absolute;
+    top: -140px;
+    /* z-index: -1; */
+}
